@@ -1,0 +1,33 @@
+/*
+ * dokumentace projektu
+ * Projekt: STORIES
+ * Vytvořil: Janek
+ */
+
+Typy odstavců:
+  01: Start
+  02: Obyčejný odstavec v rámci příběhu
+  03: Obyčejný konec
+  06: Šťastný konec
+
+Typy podmínek:
+  1: Vlastní/je schopný... určitý počet nějakého předmětu/schopnosti...
+  2: Nevlastní/není schopen...
+
+Vytváření příběhu:
+  1: Založení příběhu:
+    a. Vložit záznam do tabulky stories
+    b. Vložit záznam (až na id_story) prázdný do tabulky stories_par_charakter
+  2: Vkládání odstavců
+    a. Vložit odstavec
+    b. Vložit skok mezi dvěmi existujícími odstavci
+    c. Vložit podmínky skoku
+    d. Vložit předměty získané při skoku
+
+
+API dokumenty
+  create_user.php       - Vložit login, přezdívku, první a poslední jméno, email a heslo... Vrací chyby ohledně zadaných informací a informaci, zda byl vytvořen účet
+  login.php             - Vložit login a heslo... Vrací token/error kód
+  show_stories          - Vložit token... Vrací všechny dokončené a publikované příběhy a k tomu případně i jestli je daný člověk hrál (jako samostatný příběh) a k tomu nový token
+  update_user.php       - Vložit login, přezdívku, první a poslední jméno, email, token, a pokud se mění heslo, zadat heslo... vrací potvrzení/error a nový token
+  next_paragraph.php    - Vložit token, id_skok a příběh... Vrací odstavec, na který bylo skočeno, skoky z něj vedoucí a inventář.

@@ -1,0 +1,52 @@
+/*
+ * Hlavní styly
+ * Projekt: STORIES
+ * Vytvořil: Janek
+ */
+body{
+  margin:0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+#back{
+  display:inline-flex;
+}
+#left{
+  display:flex;
+  flex-direction: column;
+}
+#logo{
+  background-color: darkred;
+}
+#content_menu{
+  background-color: red;
+}
+#function_buttons_left{
+  background-color: pink;
+}
+#middle{
+  display:flex;
+  flex-direction: column;
+}
+#top_menu{
+  background-color: darkblue;
+}
+#content{
+  background-color: blue;
+}
+#content_footer{
+  background-color: lightblue;
+}
+#right{
+  display:flex;
+  flex-direction: column;
+}
+#user{
+  background-color: darkgreen;
+}
+#right_content{
+  background-color: green;
+}
+#function_buttons_right{
+  background-color: lightgreen;
+}
